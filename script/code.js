@@ -1,11 +1,9 @@
 function calculateBMI() {
-    const age = document.getElementById('age').value;
-    const gender = document.getElementById('gender').value;
     const weight = document.getElementById('weight').value;
     const height = document.getElementById('height').value;
 
-    if (age && gender && weight && height) {
-        // Convert height from inches to meters
+    if (weight && height) {
+        
         const heightInMeters = height * 0.0254;
         const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(2);
 
